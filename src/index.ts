@@ -1,4 +1,5 @@
 import "dotenv/config";
+import { Express, Request, Response } from "express";
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -23,6 +24,9 @@ app.use(
     })
 );
 app.use(express.json());
+app.get("/", (req: Request, res: Response) => {
+    res.send("Express + TypeScript Server");
+});
 
 //routes
 app.use("/api/folders", folderRoute);
