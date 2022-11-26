@@ -3,7 +3,7 @@ import { Express, Request, Response } from "express";
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-const folderRoute = require("./routes/folders");
+const folderRoute = require("./src/routes/folders");
 const app = express();
 
 //connect to db
