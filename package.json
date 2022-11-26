@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node --loader ts-node/esm src/index.ts"
+    "start": "node --loader ts-node src/index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +12,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.7.2"
+    "mongoose": "^6.7.2",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
@@ -20,7 +21,6 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^18.11.9",
     "nodemon": "^2.0.20",
-    "ts-node": "^10.9.1",
     "typescript": "^4.9.3"
   }
 }
